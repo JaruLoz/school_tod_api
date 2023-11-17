@@ -1,8 +1,8 @@
-const express= require('express');
+const express= require("express")
 const router= express.Router();
-const userController = require('../controllers/userController');
+const userController = require("../controllers/userController");
 
-const uploadMulter = require('../config/multer/multer.config')
+const uploadMulter = require("../config/multer.config")
 
 router.get('/', userController.getUser)
 router.get('/getUser/:id', userController.getUserById )

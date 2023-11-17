@@ -1,17 +1,17 @@
 const {Pupil} = require('../services/pupilServices.js')
 const {Tareas} = require('../services/tareasServices.js')
 
-const getUser = async(req,res)=>{}
+const getPupil = async(req,res)=>{}
 
-const getUserById= async (req,res)=>{}
+const getPupilById= async (req,res)=>{}
 
-const editUser = async(req,res)=>{}
+const editPupil = async(req,res)=>{}
 
-const createUser = async (req,res)=>{}
+const createPupil = async (req,res)=>{}
 
 module.exports={
-    createUser,
-    getUser,
-    getUserById,
-    editUser
+    createPupil,
+    getPupil,
+    getPupilById,
+    editPupil
 }
