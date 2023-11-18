@@ -9,6 +9,7 @@ const PupilRouter = require("./src/routes/pupilRoutes");
 
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
+server.use("/uploads", express.static("uploads"));
 server.use("./routes/userRoutes", UserRouter)
 server.use("./routes/tareasRoutes", TareasRouter)
 server.use("./routes/pupilRoutes", PupilRouter) 
