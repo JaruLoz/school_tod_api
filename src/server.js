@@ -3,18 +3,18 @@ const sequelize = require ("./database/dbsequelize");
 const cors = require ("cors");
 const server = express(); 
 const PORT = process.env.PORT || 3000;
-const UserRouter = require ("./src/routes/userRoutes");
-const TareasRouter = require("./src/routes/tareasRoutes");
-const PupilRouter = require("./src/routes/pupilRoutes");
+const UserRouter = require ("./routes/userRoutes");
+const TareasRouter = require ("./routes/tareasRoutes");
+const PupilRouter = require ("./routes/pupilRoutes");
 
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
-server.use("/uploads", express.static("uploads"));
+server.use("/uploads", express.static("uploads"))
 server.use("./routes/userRoutes", UserRouter)
 server.use("./routes/tareasRoutes", TareasRouter)
 server.use("./routes/pupilRoutes", PupilRouter) 
 
-server.use(cors())
+server.use(cors());
 
 server.get('/',(req,res)=>{
     res.send("Hi");
