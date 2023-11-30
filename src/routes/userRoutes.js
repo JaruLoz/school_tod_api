@@ -11,4 +11,4 @@ router.put('/editUser/:id', userController.editUser)
 router.delete('/deleteUser/:id/:email', userController.deleteUser)
 
 
-module.exports = router;
+module.exports = {router};

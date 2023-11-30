@@ -8,4 +8,4 @@ router.post('/', tareasController.createNewTarea);
 router.patch('/:tareaId', tareasController.updateOneTarea);
 router.delete('/:tareaId', tareasController.deleteOneTarea);
 
-module.exports = router;
+module.exports = {router};

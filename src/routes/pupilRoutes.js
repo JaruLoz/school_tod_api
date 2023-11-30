@@ -9,4 +9,4 @@ router.get('/getPupil/:id', pupilController.getPupilById )
 router.post('/createPupil',[uploadMulter.single("image")], pupilController.createPupil)
 router.put('/editPupil/:id', pupilController.editPupil)
 
-module.exports = router;
+module.exports = {router};

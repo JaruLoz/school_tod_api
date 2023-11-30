@@ -42,4 +42,4 @@ const Pupil = sequelize.define('Pupil',{
     }
 });
 
-model.exports={Pupil};
+module.exports={Pupil};
